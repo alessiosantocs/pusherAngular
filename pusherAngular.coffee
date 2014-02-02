@@ -1,5 +1,5 @@
 #
-# PUSHERANGULAR - Get ready for realtime chats in angularjs
+# PUSHERANGULAR - Get ready for realtime messaging in angularjs
 #
 # Author: Alessio Santo
 # Version: 0.6
