@@ -2,14 +2,14 @@
 # PUSHERANGULAR - Get ready for realtime messaging in angularjs
 #
 # Author: Alessio Santo
-# Version: 0.6
+# Version: 0.0.6
 # 
 # Docs for pusher: http://pusher.com/docs
 #
 
 pushrangular = angular.module('pusherAngular', []).provider('Pusher', [->
 
-	@version = "1.0"
+	@version = "0.0.6"
 	@name 	 = "PushrAngular"
 
 	logger = "PUSHER -> "
@@ -17,7 +17,7 @@ pushrangular = angular.module('pusherAngular', []).provider('Pusher', [->
 	# CHECK IF THE PUSHER OBJECT HAS BEEN LOADED
 	if not window.hasOwnProperty("Pusher")
 		console.error logger,"INSTALL PUSHER FIRST"
-
+		# I CANNOT RETURN HERE OTHERWISE ANGULAR WILL BREAK DOWN
 
 	PusherClass = window.Pusher
 
